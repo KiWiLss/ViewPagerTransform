@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.magicsoft.viewpagertransform.activity.GalleryActivity;
 import com.magicsoft.viewpagertransform.activity.GalleryActivity2;
+import com.magicsoft.viewpagertransform.activity.TestGalleryActivity;
 import com.magicsoft.viewpagertransform.activity.VpActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,5 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void transform(View view) {
         goTo(VpActivity.class);
+    }
+
+    public void transformTest(View view) {
+        goTo(TestGalleryActivity.class);
     }
 }

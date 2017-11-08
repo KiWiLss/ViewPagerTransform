@@ -14,7 +14,7 @@ public class GallyPageTransformer implements ViewPager.PageTransformer {
         float scaleFactor = Math.max(min_scale, 1 - Math.abs(position));
         float rotate = 20 * Math.abs(position);
         if (position < -1) {
- 
+
         } else if (position < 0) {
             page.setScaleX(scaleFactor);
             page.setScaleY(scaleFactor);

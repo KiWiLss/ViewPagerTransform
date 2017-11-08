@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.magicsoft.viewpagertransform.R;
-import com.magicsoft.viewpagertransform.transform.GallyPageTransformer;
+import com.magicsoft.viewpagertransform.transform.RotationPageTransformer;
 
 import java.util.ArrayList;
 
@@ -43,8 +43,9 @@ public class GalleryActivity extends AppCompatActivity {
 
         mVp.setAdapter(new MyAdapter());
         mVp.setOffscreenPageLimit(mImgList.size());//设置预加载数量
-        mVp.setPageMargin(-50);//控制两幅图之间的间距
-        mVp.setPageTransformer(true,new GallyPageTransformer());//3D画廊模式
+        mVp.setPageMargin(10);//控制两幅图之间的间距,尽量以屏幕的宽度来确定
+        //mVp.setPageTransformer(true,new GallyPageTransformer());//3D画廊模式
+        mVp.setPageTransformer(true,new RotationPageTransformer());//3D画廊模式
         //viewPager左右两边滑动无效的处理
         findViewById(R.id.ll_gallery_outer).setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -52,22 +53,7 @@ public class GalleryActivity extends AppCompatActivity {
                 return mVp.dispatchTouchEvent(motionEvent);
             }
         });
-        mVp.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
     }
 
     class MyAdapter extends PagerAdapter{
