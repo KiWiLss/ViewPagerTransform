@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ViewPagerTransform.iml" filepath="$PROJECT_DIR$/ViewPagerTransform.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wave/wave.iml" filepath="$PROJECT_DIR$/wave/wave.iml" />
     </modules>
   </component>
 </project>
