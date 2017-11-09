@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.magicsoft.wave.R;
 import com.xw.repo.BubbleSeekBar;
 
@@ -35,5 +36,20 @@ public class SeekActivity extends AppCompatActivity {
 
             }
         });
+
+        final LottieAnimationView byId = (LottieAnimationView) findViewById(R.id.animation_view);
+        //加载网络json图片
+       /* JSONObject json = new JSONObject(response.body().string());
+        LottieComposition.Factory.fromJson(getResources(), json, new OnCompositionLoadedListener() {
+            @Override
+            public void onCompositionLoaded(@Nullable LottieComposition composition) {
+                byId.setProgress(0);
+                byId.loop(true);
+                byId.setComposition(composition);
+                byId.playAnimation();
+            }
+        });*/
+
+
     }
 }

@@ -70,4 +70,16 @@
 <!--   app:bsb_section_count="5"节点数量-->
     <!--app:bsb_second_track_color="@color/colorAccent"左侧划过节点颜色-->
 
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_fileName="City.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        />
+
+
 </LinearLayout>
