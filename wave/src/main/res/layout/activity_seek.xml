@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.xw.repo.BubbleSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:bsb_bubble_color="@color/colorAccent"
+        app:bsb_bubble_text_color="@color/colorPrimaryDark"
+        app:bsb_max="50.0"
+        app:bsb_min="-50"
+        app:bsb_progress="0"
+        app:bsb_second_track_color="#0f0"
+        app:bsb_section_count="8"
+        app:bsb_section_text_position="sides"
+        app:bsb_show_progress_in_float="true"
+        app:bsb_show_section_mark="true"
+        app:bsb_show_section_text="true"
+        app:bsb_show_thumb_text="true"
+        app:bsb_track_color="#0ff"
+
+        app:bsb_touch_to_seek="true"
+        />
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/demo_1_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <com.xw.repo.BubbleSeekBar
+        android:id="@+id/bsb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        app:bsb_bubble_color="@color/colorAccent"
+        app:bsb_bubble_text_color="@color/colorPrimaryDark"
+        app:bsb_bubble_text_size="30sp"
+
+        app:bsb_auto_adjust_section_mark="true"
+
+        app:bsb_section_count="4"
+        app:bsb_section_text_position="below_section_mark"
+        app:bsb_show_section_mark="false"
+        app:bsb_show_section_text="false"
+        app:bsb_show_thumb_text="false"
+
+
+        app:bsb_thumb_text_size="28sp"
+        app:bsb_thumb_text_color="#f00"
+        app:bsb_thumb_color="#ff0"
+        app:bsb_touch_to_seek="true"
+        app:bsb_thumb_radius="40dp"
+        app:bsb_thumb_radius_on_dragging="10dp"
+
+        app:bsb_track_color="#f0f"
+        app:bsb_track_size="10dp"
+
+        app:bsb_second_track_size="10dp"
+        app:bsb_second_track_color="#000"
+
+        />
+    <!--app:bsb_touch_to_seek="true"是否可触摸点击-->
+    <!--app:bsb_section_text_position="below_section_mark"
+    每个节点下是否都显示数字,below_section_mark表示全部显示,同时只能停留在节点上-->
+<!--   app:bsb_section_count="5"节点数量-->
+    <!--app:bsb_second_track_color="@color/colorAccent"左侧划过节点颜色-->
+
+</LinearLayout>
