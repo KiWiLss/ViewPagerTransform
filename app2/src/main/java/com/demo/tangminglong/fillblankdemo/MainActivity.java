@@ -1,44 +1,29 @@
-package com.magicsoft.customview.activity;
+package com.demo.tangminglong.fillblankdemo;
 
 import android.graphics.RectF;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.magicsoft.customview.R;
-import com.magicsoft.customview.span.ReplaceSpan;
-import com.magicsoft.customview.span.SpansManager;
+public class MainActivity extends AppCompatActivity implements ReplaceSpan.OnClickListener{
 
-/**
- * Created by 刘少帅 on 2017/11/9
- *
- * 选题
- */
-
-public class TextActivity extends AppCompatActivity implements ReplaceSpan.OnClickListener{
+    private String mTestStr = "我是个____学生,我有一个梦想，我要成为像____一样的人.我是个 ____学生,我有一个梦想，我要成为像 ____一样的人.";
     private TextView mTvContent;
     private EditText mEtInput;
     private SpansManager mSpansManager;
-    private String mTestStr =
-            "In one day ____,we ____everything."+ "day____good morning____4878." +"***____****";
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_text);
-
-
+        setContentView(R.layout.activity_main);
         mTvContent = (TextView) findViewById(R.id.tv_content);
         mEtInput = (EditText) findViewById(R.id.et_input);
-
         mSpansManager = new SpansManager(this,mTvContent,mEtInput);
         mSpansManager.doFillBlank(mTestStr);
 
-
     }
-
 
     //填空题点击响应事件
     @Override
@@ -54,8 +39,5 @@ public class TextActivity extends AppCompatActivity implements ReplaceSpan.OnCli
         //设置EditText填空题中的相对位置
         mSpansManager.setEtXY(rf);
         mSpansManager.setSpanChecked(id);
-
-
-
     }
 }

@@ -2,23 +2,25 @@ package com.magicsoft.customview.widget;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.text.Editable;
+import android.graphics.drawable.PaintDrawable;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.TextPaint;
 import android.text.TextUtils;
-import android.text.TextWatcher;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.UnderlineSpan;
 import android.util.AttributeSet;
 import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -125,38 +127,22 @@ public class FillBlankView extends RelativeLayout {
 
 
             //输入监听
-            etInput.addTextChangedListener(new TextWatcher() {
-                @Override
-                public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
 
-                }
-
-                @Override
-                public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-                }
-
-                @Override
-                public void afterTextChanged(Editable editable) {
-
-                    fillAnswer(editable.toString(), position);
-                }
-            });
 
 
 
 
 
             // 显示原有答案
-         /*   String oldAnswer = answerList.get(position);
+            String oldAnswer = answerList.get(position);
             if (!TextUtils.isEmpty(oldAnswer)) {
                 etInput.setText(oldAnswer);
                 etInput.setSelection(oldAnswer.length());
-            }*/
+            }
 
 
 
-           /* final PopupWindow popupWindow = new PopupWindow(view, LayoutParams.MATCH_PARENT, dp2px(40));
+            final PopupWindow popupWindow = new PopupWindow(view, LayoutParams.MATCH_PARENT, dp2px(40));
             // 获取焦点
             popupWindow.setFocusable(true);
             // 为了防止弹出菜单获取焦点之后，点击Activity的其他组件没有响应
@@ -174,7 +160,7 @@ public class FillBlankView extends RelativeLayout {
                     fillAnswer(answer, position);
                     popupWindow.dismiss();
                 }
-            });*/
+            });
 
             // 显示软键盘
             InputMethodManager inputMethodManager =

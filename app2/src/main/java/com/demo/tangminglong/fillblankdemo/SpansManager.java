@@ -1,4 +1,4 @@
-package com.magicsoft.customview.span;
+package com.demo.tangminglong.fillblankdemo;
 
 import android.app.Activity;
 import android.graphics.Paint;
@@ -15,8 +15,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import com.magicsoft.customview.R;
 
 import org.xml.sax.XMLReader;
 
@@ -71,7 +69,6 @@ public class SpansManager {
         });
 
         mTv.setText(spanned);
-        //Log.e(TAG, "doFillBlank: "+spanned.toString());
     }
 
 

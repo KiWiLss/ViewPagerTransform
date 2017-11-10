@@ -1,1 +1,1 @@
-include ':app', ':wave', ':customview'
+include ':app', ':wave', ':customview', ':app2'
