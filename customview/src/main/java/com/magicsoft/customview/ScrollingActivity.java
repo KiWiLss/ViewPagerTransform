@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.magicsoft.customview.activity.TextActivity;
+import com.magicsoft.customview.activity.TextActivity2;
 
 public class ScrollingActivity extends AppCompatActivity {
 
@@ -48,6 +49,7 @@ public class ScrollingActivity extends AppCompatActivity {
             case R.id.action_settings:
                 break;
             case R.id.action_text:
+                startActivity(new Intent(ScrollingActivity.this, TextActivity2.class));
                 break;
         }
         return super.onOptionsItemSelected(item);

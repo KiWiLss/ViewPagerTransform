@@ -22,7 +22,8 @@ public class TextActivity extends AppCompatActivity implements ReplaceSpan.OnCli
     private TextView mTvContent;
     private EditText mEtInput;
     private SpansManager mSpansManager;
-    private String mTestStr = "我是个____学生,我有一个梦想，我要成为像____一样的人.";
+    private String mTestStr = "我是个____学生,我有一个梦想，我要成为像____一样的人." +
+            "In one day ____,we ____everything.";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,5 +54,8 @@ public class TextActivity extends AppCompatActivity implements ReplaceSpan.OnCli
         //设置EditText填空题中的相对位置
         mSpansManager.setEtXY(rf);
         mSpansManager.setSpanChecked(id);
+
+
+
     }
 }
