@@ -178,7 +178,7 @@ public class CustomTitleView extends View {
     protected void onDraw(Canvas canvas) {
         //super.onDraw(canvas);
 
-        mPaint.setColor(Color.YELLOW);
+        mPaint.setColor(Color.RED);
 
         canvas.drawRect(0,0,getMeasuredWidth(),getMeasuredHeight(),mPaint);
 
