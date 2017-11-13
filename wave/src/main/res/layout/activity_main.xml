@@ -27,6 +27,12 @@
             android:text="马灯"
             android:onClick="textListener"/>
 
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="clip"
+            android:onClick="clipListener"/>
     </LinearLayout>
 
 

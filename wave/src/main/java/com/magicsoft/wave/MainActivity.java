@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.magicsoft.wave.activity.ClipActivity;
 import com.magicsoft.wave.activity.OtherActivity;
 import com.magicsoft.wave.activity.SeekActivity;
 
@@ -44,5 +45,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void textListener(View view) {
         startActivity(new Intent(this, OtherActivity.class));
+    }
+
+    public void clipListener(View view) {
+        startActivity(new Intent(this, ClipActivity.class));
     }
 }
