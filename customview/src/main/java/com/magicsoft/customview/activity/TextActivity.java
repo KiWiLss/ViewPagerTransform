@@ -23,7 +23,7 @@ public class TextActivity extends AppCompatActivity implements ReplaceSpan.OnCli
     private EditText mEtInput;
     private SpansManager mSpansManager;
     private String mTestStr =
-            "In one day ____,we ____everything."+ "day____good morning____4878." +"***____****";
+            "In one day____,we____everything."+ "day____good morning____4878." +"***____****";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

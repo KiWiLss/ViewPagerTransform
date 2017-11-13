@@ -9,7 +9,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements ReplaceSpan.OnClickListener{
 
-    private String mTestStr = "我是个____学生,我有一个梦想，我要成为像____一样的人.我是个 ____学生,我有一个梦想，我要成为像 ____一样的人.";
+    private String mTestStr = "我是个____学生,我有一个梦想，我要成为像____一样的人.**第一段横线前面没加空格,后面横线前面加了空格**" +
+            "我是个 ____学生,我有一个梦想，我要成为像 ____一样的人.";
     private TextView mTvContent;
     private EditText mEtInput;
     private SpansManager mSpansManager;
