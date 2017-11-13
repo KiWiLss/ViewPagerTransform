@@ -41,4 +41,8 @@ public class MainActivity extends AppCompatActivity {
     public void seekListener(View view) {
         startActivity(new Intent(this, SeekActivity.class));
     }
+
+    public void textListener(View view) {
+        startActivity(new Intent(this, OtherActivity.class));
+    }
 }

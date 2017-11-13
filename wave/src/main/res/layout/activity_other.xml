@@ -1,11 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/text_test"-->
+        <!--android:singleLine="true"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"-->
+        <!--android:ellipsize="marquee"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--/>-->
+
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="#0f0"-->
+        <!--android:text="@string/text_test"-->
+        <!--android:lines="1"-->
+        <!--android:ellipsize="marquee"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="#0ff"-->
+        <!--android:text="@string/text_test"-->
+        <!--android:maxLines="1"-->
+        <!--android:ellipsize="marquee"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="#ffcccc"-->
+        <!--android:text="苹果公司今天在纽约股市收盘后发布了2016财年第三财季的财报，营收和利润不出意外的下滑，不过因为总营收和每股收益超过了市场预期，苹果股票在目前的盘后交易中上涨了7.21%，重回100美元以上"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="#ff0000"-->
+        <!--android:textStyle="italic|bold"-->
+        <!--android:singleLine="true"-->
+        <!--android:ellipsize="marquee"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:text="苹果公司今天在纽约股市收盘后发布了2016财年第三财季的财报，营收和利润不出意外的下滑，不过因为总营收和每股收益超过了市场预期，苹果股票在目前的盘后交易中上涨了7.21%，重回100美元以上"-->
+        <!--android:background="#009688"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:textSize="18dp"-->
+        <!--android:textColor="#000"-->
+        <!--android:textStyle="bold"-->
+        <!--android:singleLine="true"-->
+        <!--android:ellipsize="marquee"-->
+        <!--android:focusable="true"-->
+        <!--android:focusableInTouchMode="true"/>-->
+
+    <com.gongwen.marqueen.SimpleMarqueeView
+    android:id="@+id/smv_one"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+
+    android:flipInterval="3000"
+    android:inAnimation="@anim/in_left"
+    android:outAnimation="@anim/out_right"
+    app:marqueeAnimDuration="2000"
+    app:smvTextColor="#fff"
+    app:smvTextGravity="center"
+    app:smvTextSize="15sp"
+    android:background="#000"
+     />
+
+    <com.gongwen.marqueen.SimpleMarqueeView
+        android:id="@+id/smv_two"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:flipInterval="2500"
+        android:inAnimation="@anim/in_right"
+        android:outAnimation="@anim/out_left"
+        app:marqueeAnimDuration="2000"
+        app:smvTextColor="#fff"
+        app:smvTextGravity="center"
+        app:smvTextSize="15sp"
+        android:background="#0f0"/>
+
+    <com.gongwen.marqueen.SimpleMarqueeView
+        android:id="@+id/smv_three"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:smvTextColor="@color/colorAccent"
+        app:smvTextGravity="center_vertical"
+        app:smvTextSize="15sp"/>
+
+    <com.gongwen.marqueen.MarqueeView
+        android:id="@+id/mv_four"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="other"/>
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+      />
 </LinearLayout>
