@@ -4,9 +4,7 @@ import android.animation.ValueAnimator;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
@@ -68,7 +66,7 @@ public class SeekTextActivity extends AppCompatActivity {
 
             }
         });
-        // 得到progressBar控件的宽度
+       /* // 得到progressBar控件的宽度
         ViewTreeObserver vto2 = mPb.getViewTreeObserver();
         vto2.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
@@ -77,7 +75,7 @@ public class SeekTextActivity extends AppCompatActivity {
                 width = mPb.getWidth();
                 Log.i("MMM", "MainActivity onCreate()=="+mPb.getWidth());
             }
-        });
+        });*/
 
 
         ValueAnimator animator = ValueAnimator.ofInt(0, 100);
@@ -88,9 +86,6 @@ public class SeekTextActivity extends AppCompatActivity {
                 sb_quota.setProgress(progress);
 
                 mPb.setProgress(progress);
-
-
-
             }
         });
         animator.setRepeatCount(1);
