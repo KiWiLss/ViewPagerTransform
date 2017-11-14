@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+
+        <declare-styleable name="StretchContainer">
+            <attr name="ratio" format="float"/>
+        </declare-styleable>
 </resources>

@@ -38,6 +38,12 @@
             android:layout_height="wrap_content"
             android:text="pattern"
             android:onClick="patternListener"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="scroll"
+            android:onClick="scrollListener"/>
     </LinearLayout>
 
 

@@ -9,6 +9,7 @@ import android.view.View;
 import com.magicsoft.wave.activity.ClipActivity;
 import com.magicsoft.wave.activity.OtherActivity;
 import com.magicsoft.wave.activity.PatternActivity;
+import com.magicsoft.wave.activity.ScrollViewActivity;
 import com.magicsoft.wave.activity.SeekActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,5 +55,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void patternListener(View view) {
         startActivity(new Intent(this, PatternActivity.class));
+    }
+
+    public void scrollListener(View view) {
+        startActivity(new Intent(this, ScrollViewActivity.class));
     }
 }
