@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_quota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF233845"
+        android:textSize="15sp"/>
+
+    <SeekBar
+        android:id="@+id/sb_quota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_seek"
+        android:visibility="invisible"
+       />
+
+    <ProgressBar
+        android:id="@+id/pb_pb"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/bg_progress"
+        android:progress="50"
+        />
+<!-- android:thumb="@mipmap/ic_launcher" -->
+</LinearLayout>

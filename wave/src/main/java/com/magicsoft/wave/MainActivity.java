@@ -11,6 +11,7 @@ import com.magicsoft.wave.activity.OtherActivity;
 import com.magicsoft.wave.activity.PatternActivity;
 import com.magicsoft.wave.activity.ScrollViewActivity;
 import com.magicsoft.wave.activity.SeekActivity;
+import com.magicsoft.wave.activity.SeekTextActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,5 +60,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void scrollListener(View view) {
         startActivity(new Intent(this, ScrollViewActivity.class));
+    }
+
+    public void seekTextListener(View view) {
+        startActivity(new Intent(this, SeekTextActivity.class));
     }
 }

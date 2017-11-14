@@ -44,6 +44,11 @@
             android:layout_height="wrap_content"
             android:text="scroll"
             android:onClick="scrollListener"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="seektext"
+            android:onClick="seekTextListener"/>
     </LinearLayout>
 
 
