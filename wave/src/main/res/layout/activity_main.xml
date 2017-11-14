@@ -33,6 +33,11 @@
             android:layout_height="wrap_content"
             android:text="clip"
             android:onClick="clipListener"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pattern"
+            android:onClick="patternListener"/>
     </LinearLayout>
 
 

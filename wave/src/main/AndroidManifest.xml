@@ -15,6 +15,7 @@
         <activity android:name=".activity.OtherActivity"/>
         <activity android:name=".activity.SeekActivity"/>
         <activity android:name=".activity.ClipActivity"/>
+        <activity android:name=".activity.PatternActivity"/>
 
     </application>
 
