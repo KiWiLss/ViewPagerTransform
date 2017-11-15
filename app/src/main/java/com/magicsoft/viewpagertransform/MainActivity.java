@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mImg = (ImageView) findViewById(R.id.img_main_img);
 
-        mImg.setRotationY(45);
+        //mImg.setRotationY(45);
 
 
     }

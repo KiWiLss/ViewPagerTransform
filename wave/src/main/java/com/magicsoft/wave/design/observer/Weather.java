@@ -2,6 +2,7 @@ package com.magicsoft.wave.design.observer;
 
 /**
  * Created by 刘少帅 on 2017/11/14
+ * 自定义的观察对象
  */
 
 public class Weather {

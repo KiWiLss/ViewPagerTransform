@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * Created by 刘少帅 on 2017/11/14
+ * 自定义被观察者,主要是注册,解除注册,通知更新
  */
 
 public class Observable<T> {
