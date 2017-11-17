@@ -32,10 +32,11 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.xw.repo:bubbleseekbar:3.9-lite'
     //compile 'com.airbnb.android:lottie:2.2.4'
-
     compile 'com.airbnb.android:lottie:2.0.0'
-
     compile 'com.gongwen:marqueelibrary:1.1.2'
-
     compile 'com.andrognito.patternlockview:patternlockview:1.0.0'
+    compile 'com.gyf.barlibrary:barlibrary:2.3.0'
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.28'
+    compile 'com.android.support:recyclerview-v7:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
 }

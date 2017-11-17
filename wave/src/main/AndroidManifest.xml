@@ -19,7 +19,10 @@
 
         <activity android:name=".activity.ScrollViewActivity"/>
         <activity android:name=".activity.SeekTextActivity"/>
+        <activity android:name=".activity.StatusActivity"/>
+        <activity android:name=".activity.ClipDataActivity"/>
 
+        <activity android:name=".activity.TouchActivity"/>
     </application>
 
 </manifest>

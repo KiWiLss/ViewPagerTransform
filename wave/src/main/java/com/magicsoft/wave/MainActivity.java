@@ -7,11 +7,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.magicsoft.wave.activity.ClipActivity;
+import com.magicsoft.wave.activity.ClipDataActivity;
 import com.magicsoft.wave.activity.OtherActivity;
 import com.magicsoft.wave.activity.PatternActivity;
 import com.magicsoft.wave.activity.ScrollViewActivity;
 import com.magicsoft.wave.activity.SeekActivity;
 import com.magicsoft.wave.activity.SeekTextActivity;
+import com.magicsoft.wave.activity.StatusActivity;
+import com.magicsoft.wave.activity.TouchActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -64,5 +67,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void seekTextListener(View view) {
         startActivity(new Intent(this, SeekTextActivity.class));
+    }
+
+    public void statusTextListener(View view) {
+        startActivity(new Intent(this, StatusActivity.class));
+        overridePendingTransition(R.anim.fade_kiwi_in, R.anim.fade_kiwi_out);
+    }
+
+    public void clipdataListener(View view) {
+        startActivity(new Intent(this, ClipDataActivity.class));
+        overridePendingTransition(R.anim.fade_kiwi_out, R.anim.fade_kiwi_in);
+    }
+
+    public void touchListener(View view) {
+        startActivity(new Intent(this, TouchActivity.class));
     }
 }
