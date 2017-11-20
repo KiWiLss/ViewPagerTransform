@@ -8,13 +8,14 @@ import android.view.View;
 
 import com.magicsoft.wave.activity.ClipActivity;
 import com.magicsoft.wave.activity.ClipDataActivity;
+import com.magicsoft.wave.activity.ExaminActivity;
 import com.magicsoft.wave.activity.OtherActivity;
 import com.magicsoft.wave.activity.PatternActivity;
+import com.magicsoft.wave.activity.PhotoActivity;
 import com.magicsoft.wave.activity.ScrollViewActivity;
 import com.magicsoft.wave.activity.SeekActivity;
 import com.magicsoft.wave.activity.SeekTextActivity;
 import com.magicsoft.wave.activity.StatusActivity;
-import com.magicsoft.wave.activity.TouchActivity;
 import com.magicsoft.wave.utils.TypeConversionUtils;
 
 import java.util.ArrayList;
@@ -102,8 +103,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         String value = TypeConversionUtils.getStringFromObject(strings);
-        Intent intent = new Intent(this, TouchActivity.class);
-        intent.putExtra("key",value);
+        Intent intent = new Intent(this, PhotoActivity.class);
+
         startActivity(intent);
+    }
+
+    public void examineListener(View view) {
+        startActivity(new Intent(this, ExaminActivity.class));
     }
 }
