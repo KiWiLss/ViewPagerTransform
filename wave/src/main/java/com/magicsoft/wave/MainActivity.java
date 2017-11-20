@@ -15,6 +15,9 @@ import com.magicsoft.wave.activity.SeekActivity;
 import com.magicsoft.wave.activity.SeekTextActivity;
 import com.magicsoft.wave.activity.StatusActivity;
 import com.magicsoft.wave.activity.TouchActivity;
+import com.magicsoft.wave.utils.TypeConversionUtils;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +25,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+//        SlidingRootNav slidingRootNav = new SlidingRootNavBuilder(this)
+//                .withToolbarMenuToggle(toolbar)
+//                .withMenuOpened(false)
+//
+//                .withContentClickableWhenMenuOpened(false)
+//                .withSavedState(savedInstanceState)
+//                .withMenuLayout(R.layout.menu_left_drawer)
+//                .inject();
+
 
 
 
@@ -80,6 +94,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void touchListener(View view) {
-        startActivity(new Intent(this, TouchActivity.class));
+        ArrayList<String> strings = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            strings.add("hello"+i);
+        }
+        Object[] objects = strings.toArray();
+
+
+        String value = TypeConversionUtils.getStringFromObject(strings);
+        Intent intent = new Intent(this, TouchActivity.class);
+        intent.putExtra("key",value);
+        startActivity(intent);
     }
 }

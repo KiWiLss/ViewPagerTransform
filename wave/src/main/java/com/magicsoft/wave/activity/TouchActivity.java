@@ -7,8 +7,11 @@ import android.util.Log;
 import android.view.MotionEvent;
 
 import com.magicsoft.wave.R;
+import com.magicsoft.wave.utils.TypeConversionUtils;
 import com.magicsoft.wave.widget.MyButton;
 import com.magicsoft.wave.widget.MyLinearLayout;
+
+import java.util.List;
 
 /**
  * @author winding
@@ -35,7 +38,12 @@ public class TouchActivity extends AppCompatActivity {
         mLl = (MyLinearLayout) findViewById(R.id.ll_touch);
 
 
+        String key = getIntent().getStringExtra("key");
+        Log.e(TAG, "onCreate: "+key );
 
+        List<String> list = (List<String>) TypeConversionUtils.getObjectFromString(key);
+
+        Log.e(TAG, "onCreate: "+list.get(0).toString());
         //mLl.setCan(false);
     }
 
