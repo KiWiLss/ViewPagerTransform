@@ -28,6 +28,7 @@
         <activity android:name=".activity.TouchActivity"/>
         <activity android:name=".activity.ExaminActivity"/>
         <activity android:name=".activity.PhotoActivity"/>
+        <activity android:name=".activity.ShadowActivity"/>
     </application>
 
 </manifest>

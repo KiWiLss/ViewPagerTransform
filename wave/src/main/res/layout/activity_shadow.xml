@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:background="@android:color/white"
+            />
+        <com.lijiankun24.shadowlayout.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:shadowColor="#66000000"
+            app:shadowDx="0dp"
+            app:shadowDy="3dp"
+            app:shadowRadius="10dp"
+            app:shadowSide="all">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:src="@mipmap/ic_launcher"/>
+        </com.lijiankun24.shadowlayout.ShadowLayout>
+
+        <com.lijiankun24.shadowlayout.ShadowLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="120dp"
+            app:shadowSide="all"
+            app:shadowColor="#66ff0000"
+            app:shadowRadius="10dp"
+            app:shadowDx="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热议的颜色值"
+                android:background="@color/white"/>
+
+
+        </com.lijiankun24.shadowlayout.ShadowLayout>
+
+
+        <Button
+            android:id="@+id/btn_shadow_double"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="双击"
+            />
+    </LinearLayout>
+</ScrollView>

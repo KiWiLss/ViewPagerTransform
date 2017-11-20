@@ -70,6 +70,12 @@
             android:layout_height="wrap_content"
             android:text="审核"
             android:onClick="examineListener"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="阴影"
+            android:onClick="shadlowListener"/>
     </LinearLayout>
 
 

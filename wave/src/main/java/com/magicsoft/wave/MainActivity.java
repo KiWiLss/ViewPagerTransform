@@ -15,6 +15,7 @@ import com.magicsoft.wave.activity.PhotoActivity;
 import com.magicsoft.wave.activity.ScrollViewActivity;
 import com.magicsoft.wave.activity.SeekActivity;
 import com.magicsoft.wave.activity.SeekTextActivity;
+import com.magicsoft.wave.activity.ShadowActivity;
 import com.magicsoft.wave.activity.StatusActivity;
 import com.magicsoft.wave.utils.TypeConversionUtils;
 
@@ -110,5 +111,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void examineListener(View view) {
         startActivity(new Intent(this, ExaminActivity.class));
+    }
+
+
+    public void shadlowListener(View view) {
+        startActivity(new Intent(this, ShadowActivity.class));
     }
 }
