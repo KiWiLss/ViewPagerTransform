@@ -30,4 +30,10 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support:design:26.+'
     testCompile 'junit:junit:4.12'
+    //compile 'liji.library.dev:citypickerview:2.0.1'
+    compile('com.github.gzu-liyujiang.AndroidPicker:WheelPicker:1.5.5') {
+        exclude group: 'com.android.support'
+    }
+
+    compile 'com.alibaba:fastjson:1.2.17'
 }
