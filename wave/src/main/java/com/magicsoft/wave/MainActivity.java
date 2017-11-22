@@ -19,6 +19,7 @@ import com.magicsoft.wave.activity.SeekTextActivity;
 import com.magicsoft.wave.activity.ShadowActivity;
 import com.magicsoft.wave.activity.StatusActivity;
 import com.magicsoft.wave.activity.VagueActivity;
+import com.magicsoft.wave.activity.VagueActivity2;
 import com.magicsoft.wave.utils.TypeConversionUtils;
 
 import java.util.ArrayList;
@@ -122,5 +123,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void vagueListener(View view) {
         startActivity(new Intent(this, VagueActivity.class));
+    }
+
+    public void vagueListener2(View view) {
+        startActivity(new Intent(this, VagueActivity2.class));
     }
 }
