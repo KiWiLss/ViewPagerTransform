@@ -104,4 +104,8 @@
             android:scaleType="fitCenter"
             android:src="@mipmap/ic_launcher" />
     </LinearLayout>
+
+
+
+
 </RelativeLayout>

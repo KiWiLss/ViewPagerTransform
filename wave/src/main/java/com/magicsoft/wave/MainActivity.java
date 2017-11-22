@@ -4,6 +4,7 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 
 import com.magicsoft.wave.activity.ClipActivity;
@@ -39,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
 //                .inject();
 
 
-
-
+        Log.e("MMM", "onCreate: "+App.isForeground);
 
     }
 
@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void examineListener(View view) {
         startActivity(new Intent(this, ExaminActivity.class));
+        Log.e("MMM", "onCreate: "+App.isForeground);
     }
 
 

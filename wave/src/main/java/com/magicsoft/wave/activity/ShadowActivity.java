@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.magicsoft.wave.App;
 import com.magicsoft.wave.R;
 
 public class ShadowActivity extends AppCompatActivity {
@@ -42,6 +43,7 @@ public class ShadowActivity extends AppCompatActivity {
             }
         });
 
+        Log.e(TAG, "onCreate: "+ App.isForeground);
     }
 
     /**
