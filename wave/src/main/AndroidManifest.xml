@@ -31,6 +31,7 @@
         <activity android:name=".activity.ExaminActivity"/>
         <activity android:name=".activity.PhotoActivity"/>
         <activity android:name=".activity.ShadowActivity"/>
+        <activity android:name=".activity.VagueActivity"/>
     </application>
 
 </manifest>
