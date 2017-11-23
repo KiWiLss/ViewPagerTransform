@@ -32,6 +32,25 @@
             app:srcCompat="@drawable/animated_cpu"
             android:onClick="cpuStart"
             />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="day"
+            android:onClick="dayListener"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="night"
+            android:onClick="nightListener"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="coordinatorLayout"
+            android:onClick="jumpListener"
+            android:textColor="#f00"/>
     </LinearLayout>
 
 
