@@ -33,6 +33,8 @@
         <activity android:name=".activity.ShadowActivity"/>
         <activity android:name=".activity.VagueActivity"/>
         <activity android:name=".activity.VagueActivity2"/>
+
+        <activity android:name=".activity.VagueActivity3"/>
     </application>
 
 </manifest>
