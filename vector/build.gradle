@@ -33,4 +33,5 @@ dependencies {
 
     compile 'com.android.support:design:26.+'
     compile 'com.github.tarek360.RichPath:animator:0.0.9'
+    compile 'com.yan:inflaterauto:1.0.1'
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="take"
+        android:onClick="take"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="album"
+        android:onClick="album"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="裁剪"
+        android:onClick="cut"/>
+    <ImageView
+        android:id="@+id/img_take_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

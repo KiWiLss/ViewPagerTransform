@@ -4,6 +4,11 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
     <application
         android:name=".App"
         android:allowBackup="true" android:icon="@mipmap/ic_launcher"
@@ -29,12 +34,15 @@
 
         <activity android:name=".activity.TouchActivity"/>
         <activity android:name=".activity.ExaminActivity"/>
-        <activity android:name=".activity.PhotoActivity"/>
+        <activity android:name=".activity.PhotoActivity2"/>
         <activity android:name=".activity.ShadowActivity"/>
         <activity android:name=".activity.VagueActivity"/>
         <activity android:name=".activity.VagueActivity2"/>
 
         <activity android:name=".activity.VagueActivity3"/>
+        <activity android:name=".activity.TakePhotoActivity"/>
+        
+       
     </application>
 
 </manifest>

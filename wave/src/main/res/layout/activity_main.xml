@@ -92,6 +92,12 @@
             android:layout_height="wrap_content"
             android:text="vague3"
             android:onClick="vagueListener3"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="takephoto"
+            android:onClick="takephoto"/>
     </LinearLayout>
 
 

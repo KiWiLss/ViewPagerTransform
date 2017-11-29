@@ -5,12 +5,12 @@
 
 
 
-    <com.bm.library.PhotoView
-        android:id="@+id/img1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#ffffbb33"
-        android:src="@mipmap/bbb" />
+    <!--<com.bm.library.PhotoView-->
+        <!--android:id="@+id/img1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#ffffbb33"-->
+        <!--android:src="@mipmap/bbb" />-->
 
 
 </LinearLayout>

@@ -12,12 +12,13 @@ import com.magicsoft.wave.activity.ClipDataActivity;
 import com.magicsoft.wave.activity.ExaminActivity;
 import com.magicsoft.wave.activity.OtherActivity;
 import com.magicsoft.wave.activity.PatternActivity;
-import com.magicsoft.wave.activity.PhotoActivity;
+import com.magicsoft.wave.activity.PhotoActivity2;
 import com.magicsoft.wave.activity.ScrollViewActivity;
 import com.magicsoft.wave.activity.SeekActivity;
 import com.magicsoft.wave.activity.SeekTextActivity;
 import com.magicsoft.wave.activity.ShadowActivity;
 import com.magicsoft.wave.activity.StatusActivity;
+import com.magicsoft.wave.activity.TakePhotoActivity;
 import com.magicsoft.wave.activity.VagueActivity;
 import com.magicsoft.wave.activity.VagueActivity2;
 import com.magicsoft.wave.activity.VagueActivity3;
@@ -107,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         String value = TypeConversionUtils.getStringFromObject(strings);
-        Intent intent = new Intent(this, PhotoActivity.class);
+        Intent intent = new Intent(this, PhotoActivity2.class);
 
         startActivity(intent);
     }
@@ -132,5 +133,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void vagueListener3(View view) {
         startActivity(new Intent(this, VagueActivity3.class));
+    }
+
+    public void takephoto(View view) {
+        startActivity(new Intent(this, TakePhotoActivity.class));
     }
 }
