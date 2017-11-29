@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:drawable="@drawable/vector_drawable_cpu_ani">
-
+    android:drawable="@drawable/vec_img_two">
     <target
         android:name="star"
         android:animation="@animator/star_anim" />

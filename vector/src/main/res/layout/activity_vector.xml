@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/animated_cpu"
+        android:onClick="cpuS"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/img_vec_one"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/vec_img_one" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vector"
+        android:drawableLeft="@drawable/vec_img_one"
+        android:gravity="center"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/vector_drawable_anim"
+        android:onClick="resart"
+        android:tint="#00f"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/vector_drawable_anim"
+        android:text="文字"
+        android:onClick="textTest"
+        android:textColor="#fff"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:textColor="#fff"
+        android:drawableLeft="@drawable/vec_img_one"
+        android:drawableTint="@color/colorPrimary"/>
+
+
+    <com.richpath.RichPathView
+        android:id="@+id/ic_command"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        app:vector="@drawable/ic_command" />
+
+    <com.richpath.RichPathView
+        android:id="@+id/ic_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:onClick="animateAndroid"
+        app:vector="@drawable/ic_android" />
+
+    <com.richpath.RichPathView
+        android:id="@+id/animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="6dp"
+        android:onClick="animateAnimal"
+        app:vector="@drawable/animal"/>
+
+    <com.richpath.RichPathView
+        android:id="@+id/ic_arrow_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="4dp"
+        android:onClick="animateArrowToSearch"
+        app:vector="@drawable/ic_arrow_search" />
+
+    <com.richpath.RichPathView
+        android:id="@+id/ic_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:onClick="animateNotification"
+        app:vector="@drawable/ic_notifications" />
+
+    <com.richpath.RichPathView
+        android:id="@+id/ic_playlist_add_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:onClick="animatePlaylistAddCheck"
+        app:vector="@drawable/ic_playlist_add_check"/>
+
+    <com.richpath.RichPathView
+        android:id="@+id/love_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:onClick="animateLoveFace"
+        app:vector="@drawable/face_love" />
+</LinearLayout>
+
+
+</ScrollView>

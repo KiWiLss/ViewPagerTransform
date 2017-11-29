@@ -1,6 +1,7 @@
 package com.magicsoft.vector.activity;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomSheetBehavior;
@@ -64,6 +65,7 @@ public class BottomBehaviorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(BottomBehaviorActivity.this, "click", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(BottomBehaviorActivity.this,VectorActivity.class));
             }
         });
         dialog.setContentView(pwView);
