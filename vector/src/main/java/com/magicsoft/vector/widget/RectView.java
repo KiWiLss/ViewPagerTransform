@@ -2,10 +2,15 @@ package com.magicsoft.vector.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+
+import static com.magicsoft.vector.MainActivity.TAG;
 
 /**
  * -----------------------------------------------------------------
@@ -48,14 +53,28 @@ public class RectView extends View {
 
         width = wm.getDefaultDisplay().getWidth();
         height = wm.getDefaultDisplay().getHeight();
+        Log.e(TAG, "init: "+width+"||"+height );
+    }
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+
+        int size = MeasureSpec.getSize(widthMeasureSpec);
+
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-
-
-
+        Paint paint = new Paint();
+        paint.setColor(Color.BLUE);
+        //设置锯齿效果
+        paint.setAntiAlias(true);
+        //设置实心
+        paint.setStyle(Paint.Style.FILL);
+        //绘制
+        canvas.drawRect(0,0,getWidth(),getHeight(),paint);
     }
 }

@@ -8,8 +8,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <com.magicsoft.vector.widget.RectView
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
 
-
+        <com.magicsoft.vector.widget.CircleView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"/>
 
 
 
