@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.magicsoft.vector.activity.AutoActivity1;
 import com.magicsoft.vector.activity.BottomBehaviorActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -49,5 +50,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void jumpListener(View view) {
         startActivity(new Intent(this, BottomBehaviorActivity.class));
+    }
+
+    public void percentListener(View view) {
+        startActivity(new Intent(this, AutoActivity1.class));
     }
 }

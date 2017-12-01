@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import com.magicsoft.wave.R;
 import com.ufo.imageselector.DWImages;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -56,6 +57,18 @@ public class TakePhotoActivity extends AppCompatActivity {
             public void onResult(List<String> images) {
                 //这里返回选择的图片路径
                 Log.e(TAG, "onResult: "+images.get(0).toString());
+
+                //DWImages.cropImage(TakePhotoActivity.this,images.get(0).toString(),4,5,400,500);
+
+
+            }
+        });
+
+        DWImages.parserCropResult(requestCode, data, new DWImages.CropImageCallback() {
+            @Override
+            public void onResult(String images) {
+                Log.d(TAG, "onResult:--> Crop path: " + images);
+                Log.d(TAG, "onResult:--> Crop size: " + new File(images).length());
             }
         });
 

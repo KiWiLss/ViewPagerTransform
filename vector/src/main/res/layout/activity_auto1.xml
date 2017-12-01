@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:percent="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageButton
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        percent:layout_heightPercent="20%"
+        percent:layout_widthPercent="20%"
+        android:layout_height="0dp"
+        android:layout_width="0dp" />
+
+    <ImageButton
+        android:layout_height="10dp"
+        android:layout_width="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        percent:layout_heightPercent="20%"
+        percent:layout_widthPercent="20%h"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        percent:layout_widthPercent="100%"
+        percent:layout_heightPercent="10%"
+        android:text="100%w,10%h"
+        percent:layout_marginTopPercent="10%"
+        android:background="#ff0"
+       />
+
+
+</com.zhy.android.percent.support.PercentRelativeLayout>
