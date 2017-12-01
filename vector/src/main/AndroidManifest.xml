@@ -19,6 +19,7 @@
         <activity android:name=".activity.BottomBehaviorActivity"/>
         <activity android:name=".activity.VectorActivity"/>
         <activity android:name=".activity.AutoActivity1"/>
+        <activity android:name=".activity.CustomActivity"/>
     </application>
 
 </manifest>

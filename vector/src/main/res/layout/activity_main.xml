@@ -57,7 +57,12 @@
             android:text="percent"
             android:onClick="percentListener"
             android:textColor="#f00"/>
-
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="custom"
+            android:onClick="customListener"
+            android:textColor="#f00"/>
     </LinearLayout>
 
 
