@@ -17,6 +17,9 @@
             android:layout_height="100dp"
             android:layout_gravity="center"/>
 
+        <com.magicsoft.vector.widget.TrigonView
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
 
 
 
