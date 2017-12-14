@@ -1,1 +1,1 @@
-include ':app', ':wave', ':customview', ':app2', ':library', ':vector'
+include ':app', ':wave', ':customview', ':app2', ':library', ':vector', ':recycler'
