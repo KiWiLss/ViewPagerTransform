@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.magicsoft.recycler.activity.OneActivity;
+import com.magicsoft.recycler.activity.TwoActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,5 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void one(View view) {
         startActivity(new Intent(this, OneActivity.class));
+    }
+    public void two(View view) {
+        startActivity(new Intent(this, TwoActivity.class));
     }
 }
