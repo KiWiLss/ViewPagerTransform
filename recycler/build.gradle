@@ -38,4 +38,6 @@ dependencies {
     }
     //compile 'com.yarolegovich:discrete-scrollview:1.0.3'
     //compile project(':libraryalbum')
+
+    compile 'com.zhy:changeskin:3.0.0'
 }
