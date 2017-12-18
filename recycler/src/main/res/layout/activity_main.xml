@@ -25,7 +25,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="skin"
+            android:text="换肤示例"
             android:onClick="skin"/>
     </LinearLayout>
 
