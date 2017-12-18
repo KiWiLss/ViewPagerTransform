@@ -12,79 +12,15 @@
         android:gravity="center_horizontal"
         >
 
-<!--默认样式-->
-      <!--  <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            >
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/shop1"
-                android:scaleType="centerCrop"/>
-        </android.support.v7.widget.CardView>
-
-        &lt;!&ndash;加上阴影的样式&ndash;&gt;
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
+            android:text="原生样式"
+            android:onClick="goole"/>
+        <Button
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            app:cardElevation="10dp">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/shop2"
-                android:scaleType="centerCrop"/>
-        </android.support.v7.widget.CardView>
-
-        &lt;!&ndash;改变弧度&ndash;&gt;
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            app:cardElevation="10dp"
-            app:cardCornerRadius="10dp">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/shop3"
-                android:scaleType="centerCrop"/>
-        </android.support.v7.widget.CardView>-->
-
-        <!--加上内边距-->
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            app:cardElevation="10dp"
-            app:cardCornerRadius="10dp"
-            app:contentPadding="5dp"
-            android:layout_marginBottom="20dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/shop4"
-                android:scaleType="centerCrop"/>
-        </android.support.v7.widget.CardView>
-
-
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardElevation="10dp"
-            app:cardCornerRadius="10dp"
-            android:clickable="true"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:layout_marginBottom="20dp"
-         >
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/shop5"
-                android:scaleType="centerCrop"/>
-        </android.support.v7.widget.CardView>
+            android:text="自定义主题一"
+            android:onClick="themeOne"/>
     </LinearLayout>
 </ScrollView>
