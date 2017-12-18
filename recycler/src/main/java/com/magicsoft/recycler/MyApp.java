@@ -2,6 +2,8 @@ package com.magicsoft.recycler;
 
 import android.app.Application;
 
+import com.zhy.changeskin.SkinManager;
+
 /**
  * -----------------------------------------------------------------
  * Copyright (C) 2014-2016, by your company, All rights reserved.
@@ -22,6 +24,6 @@ public class MyApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+        SkinManager.getInstance().init(this);
     }
 }

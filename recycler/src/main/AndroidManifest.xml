@@ -17,6 +17,7 @@
 
         <activity android:name=".activity.OneActivity"/>
         <activity android:name=".activity.TwoActivity"/>
+        <activity android:name=".activity.SkinActivity"/>
     </application>
 
 </manifest>
